@@ -1,3 +1,4 @@
+#!/bin/env python3
 import ipaddress
 
 
@@ -14,13 +15,14 @@ def process_campus(campus):
 def parse_range(ip_range):
     """ parse the ipservice strings into a IPv4Network """
     return ipaddress.summarize_address_range(
-        parse_ip_address(ip_range[0]), parse_ip_address(ip_range[1]),)
+        parse_ip_address(ip_range[0]),
+        parse_ip_address(ip_range[1]), )
 
 
 def parse_ip_address(x):
     """ parse ipservice ipaddress into IPv4Address """
-    return ipaddress.ip_address(
-        '.'.join( [ str(int(z)) for z in x.split('.') ] ))
+    return ipaddress.ip_address('.'.join([str(int(z)) for z in x.split('.')]))
+
 
 file_name = "TEST.csv"
 with open(file_name, 'r') as open_file:
@@ -30,4 +32,3 @@ with open(file_name, 'r') as open_file:
     for campus in items:
         if len(campus) > 0:
             process_campus(campus)
-
