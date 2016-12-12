@@ -1,0 +1,13 @@
+ALL IP List
+Last IP Update: 06/29/16 05:36PM
+
+Xena (UCX)
+Range Start,Range End,Type,Updated,Editor,Note
+010.015.018.206,010.015.018.206,IP,10/11/06 03:45 PM,loader,N/A
+128.003.060.000,128.003.063.255,IP,11/05/07 03:12 PM,loader,N/A
+
+Yuba (UCY)
+Range Start,Range End,Type,Updated,Editor,Note
+172.003.000.000,172.003.059.255,IP,11/05/07 03:12 PM,loader,N/A
+172.003.064.004,172.003.255.255,IP,10/11/06 03:45 PM,loader,N/A
+
